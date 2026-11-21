@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Noticias, comunicados, directorio y documentos del SNTISSSTE Sección XXV Oaxaca.">
+  <meta name="referrer" content="no-referrer">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https: data:; object-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>SNTISSSTE · Sección XXV Oaxaca</title>
+  <link rel="stylesheet" href="./assets/estilos.css">
+  <script src="./assets/sitio.js" type="module"></script>
+</head>
+<body class="portal" id="inicio">
+  <a class="salto" href="#contenido">Ir al contenido</a>
+  <header class="encabezado">
+    <div class="contenedor barra">
+      <a class="marca" href="#inicio" aria-label="SNTISSSTE Sección XXV Oaxaca, inicio">
+        <span class="escudos">
+          <img src="./assets/logo-nacional.jpg" width="58" height="58" alt="SNTISSSTE Nacional">
+          <img src="./assets/logo-seccion25.jpg" width="58" height="58" alt="Sección XXV Oaxaca">
+        </span>
+        <span><strong>SNTISSSTE</strong><small>Sección XXV Oaxaca</small></span>
+      </a>
+      <div class="barra-acciones">
+        <button type="button" class="boton texto-grande" id="tamano-texto" aria-pressed="false" hidden><span aria-hidden="true">A⁺</span> Texto grande</button>
+        <button type="button" class="boton menu-boton" id="menu-boton" aria-controls="menu-principal" aria-expanded="false" hidden>Menú</button>
+      </div>
+    </div>
+    <nav class="menu-principal" id="menu-principal" aria-label="Menú principal">
+      <div class="contenedor menu-enlaces">
+        <a href="#carrusel">Avisos</a>
+        <a href="#noticias">Noticias</a>
+        <a href="#comunicados">Comunicados</a>
+        <a href="#descargas">Documentos</a>
+        <a href="#directorio">Directorio</a>
+        <a href="#enlaces">Enlaces</a>
+      </div>
+    </nav>
+  </header>
+  <main id="contenido">
+    <section class="portada" aria-labelledby="titulo-portada">
+      <div class="contenedor portada-interior">
+        <div class="portada-texto">
+          <p class="antetitulo">Portal sindical</p>
+          <h1 id="titulo-portada">Sección XXV Oaxaca</h1>
+          <p class="introduccion" id="introduccion">Espacio informativo de la Sección XXV del SNTISSSTE en el estado de Oaxaca. Consulta noticias, comunicados, documentos y enlaces institucionales.</p>
+          <a class="boton claro" href="#accesos">Explorar el portal <span aria-hidden="true">↓</span></a>
+        </div>
+        <div class="portada-foto" id="portada-foto" hidden></div>
+      </div>
+    </section>
+    <div class="contenedor contenido">
+      <section class="accesos" id="accesos" aria-labelledby="titulo-accesos">
+        <h2 id="titulo-accesos">¿Qué necesitas consultar?</h2>
+        <form id="buscador" class="buscador" role="search" hidden>
+          <label for="consulta">Buscar en el portal</label>
+          <div class="buscador-campos">
+            <input id="consulta" type="search" enterkeyhint="search" placeholder="Ej. documentos o ISSSTE" maxlength="140" required>
+            <button type="submit" class="boton">Buscar</button>
+            <button type="reset" class="boton boton-secundario" id="limpiar-busqueda" hidden>Limpiar</button>
+          </div>
+          <p id="estado-busqueda" role="status"></p>
+          <ul id="resultados-busqueda" hidden></ul>
+        </form>
+        <nav class="accesos-lista" aria-label="Accesos rápidos">
+          <a href="#carrusel"><strong>Avisos recientes</strong><span>Carteles e información destacada</span></a>
+          <a href="#noticias"><strong>Noticias</strong><span>Información de la Sección XXV</span></a>
+          <a href="#comunicados"><strong>Comunicados</strong><span>Consulta las publicaciones oficiales</span></a>
+          <a href="#descargas"><strong>Documentos</strong><span>Abre o descarga archivos PDF</span></a>
+          <a href="#directorio"><strong>Directorio</strong><span>Encuentra áreas y datos de contacto</span></a>
+          <a href="#enlaces"><strong>Enlaces institucionales</strong><span>Visita portales y servicios oficiales</span></a>
+        </nav>
+      </section>
+      <p class="estado" id="estado-publico" role="status">Cargando contenido…</p>
+      <noscript><p class="vacio">Activa JavaScript para consultar el contenido del portal.</p></noscript>
+      <div id="secciones" hidden>
+        <section id="carrusel" aria-labelledby="titulo-carrusel">
+          <h2 id="titulo-carrusel">Avisos recientes</h2>
+          <p class="vacio" id="carrusel-vacio">Por el momento no hay avisos recientes. Puedes consultar los <a href="#comunicados">comunicados</a>.</p>
+          <div class="carrusel" id="carrusel-tarjetas" hidden>
+            <div class="carrusel-controles" hidden>
+              <button type="button" class="boton" id="carrusel-pausa">Pausar</button>
+              <span id="carrusel-posicion" aria-hidden="true"></span>
+              <button type="button" class="boton boton-secundario" id="carrusel-anterior">Anterior</button>
+              <button type="button" class="boton boton-secundario" id="carrusel-siguiente">Siguiente</button>
+            </div>
+            <p id="carrusel-anuncio" class="solo-lectores" role="status"></p>
+            <div id="carrusel-avisos"></div>
+          </div>
+        </section>
+        <aside id="destacado" class="destacado" aria-label="Aviso destacado" hidden></aside>
+        <div class="columnas">
+          <section id="noticias" aria-labelledby="titulo-noticias">
+            <h2 id="titulo-noticias">Noticias</h2>
+            <div class="lista" data-seccion="noticias"></div>
+          </section>
+          <section id="comunicados" aria-labelledby="titulo-comunicados">
+            <h2 id="titulo-comunicados">Comunicados</h2>
+            <div class="lista" data-seccion="comunicados"></div>
+          </section>
+        </div>
+        <section id="descargas" aria-labelledby="titulo-descargas">
+          <h2 id="titulo-descargas">Documentos y descargas</h2>
+          <div class="rejilla" data-seccion="documentos"></div>
+        </section>
+        <section id="directorio" aria-labelledby="titulo-directorio">
+          <h2 id="titulo-directorio">Directorio seccional</h2>
+          <div class="rejilla" data-seccion="directorio"></div>
+        </section>
+        <section id="enlaces" aria-labelledby="titulo-enlaces">
+          <h2 id="titulo-enlaces">Enlaces institucionales</h2>
+          <div class="rejilla" data-seccion="enlaces"></div>
+        </section>
+        <section id="faq" aria-labelledby="titulo-faq" hidden>
+          <h2 id="titulo-faq">Preguntas frecuentes</h2>
+          <div class="lista" data-seccion="preguntas"></div>
+        </section>
+      </div>
+    </div>
+  </main>
+  <footer class="pie" id="contacto">
+    <div class="contenedor pie-interior">
+      <div><strong>SNTISSSTE Sección XXV Oaxaca</strong><p>Delegación sindical en el estado de Oaxaca</p></div>
+      <div id="datos-contacto" hidden><h2>Contacto</h2><div id="contactos"></div></div>
+      <a class="boton borde-claro" href="#inicio">Volver al inicio ↑</a>
+    </div>
+  </footer>
+  <dialog id="visor" aria-labelledby="titulo-visor">
+    <div class="visor-barra"><h2 id="titulo-visor">Imagen ampliada</h2><button class="boton" type="button" id="cerrar-visor" autofocus>Cerrar imagen</button></div>
+    <img id="imagen-visor" alt="">
+  </dialog>
+</body>
+</html>

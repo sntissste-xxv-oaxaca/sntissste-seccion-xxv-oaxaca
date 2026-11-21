@@ -1,0 +1,82 @@
+{
+  "version": 1,
+  "portada": {
+    "introduccion": "Espacio informativo de la Sección XXV del SNTISSSTE en el estado de Oaxaca. Consulta noticias, comunicados, documentos y enlaces institucionales.",
+    "titulo": "",
+    "texto": "",
+    "url": "",
+    "boton": "",
+    "cartelLocal": "",
+    "imagen": "",
+    "alt": ""
+  },
+  "contacto": {
+    "direccion": "Priv. de Sabinos, Reforma, 68050 Oaxaca de Juárez, Oax., Oaxaca de Juárez, Mexico.",
+    "horario": "10:00-19:00 hrs",
+    "telefono": "+52 951 513 9061",
+    "correo": "seccion25oax@gmail.com",
+    "facebook": "https://www.facebook.com/profile.php?id=61596339104610"
+  },
+  "carrusel": [],
+  "noticias": [],
+  "comunicados": [],
+  "documentos": [],
+  "directorio": [],
+  "enlaces": [
+    {
+      "titulo": "Portal Nacional SNTISSSTE",
+      "categoria": "Sindicato Nacional",
+      "texto": "Accede a la página oficial del Comité Ejecutivo Nacional del SNTISSSTE, noticias nacionales, estatutos y comunicados.",
+      "url": "https://www.sntissste.mx",
+      "boton": "Ir a sntissste.mx"
+    },
+    {
+      "titulo": "Oficina Virtual ISSSTE (SINAVID)",
+      "categoria": "Servicios ISSSTE",
+      "texto": "Consulta tu expediente electrónico, vigencia de derechos, historial laboral, clínicas adscritas y trámites digitales.",
+      "url": "https://oficinavirtual.issste.gob.mx",
+      "boton": "Ir a Oficina Virtual"
+    },
+    {
+      "titulo": "Préstamos Personales ISSSTE",
+      "categoria": "Prestaciones Económicas",
+      "texto": "Registro a sorteos electrónicos, consulta de resultados, saldos y estado de cuenta de préstamos personales.",
+      "url": "https://siaepp.issste.gob.mx",
+      "boton": "Ir a Portal de Préstamos"
+    },
+    {
+      "titulo": "TURISSSTE",
+      "categoria": "Recreación y Turismo",
+      "texto": "Consulta paquetes vacacionales, tarifas preferenciales, convenios hoteleros y promociones para trabajadores y sus familias.",
+      "url": "https://www.gob.mx/turissste",
+      "boton": "Ir a TURISSSTE"
+    },
+    {
+      "titulo": "FOVISSSTE",
+      "categoria": "Vivienda",
+      "texto": "Consulta tu estado de cuenta, convocatorias de créditos hipotecarios, esquemas de financiamiento y simuladores.",
+      "url": "https://www.gob.mx/fovissste",
+      "boton": "Ir a FOVISSSTE"
+    },
+    {
+      "titulo": "PENSIONISSSTE",
+      "categoria": "Ahorro para el Retiro",
+      "texto": "Información sobre tu cuenta individual, ahorro solidario, rendimientos, trámites de retiro y atención a trabajadores.",
+      "url": "https://www.gob.mx/pensionissste",
+      "boton": "Ir a PENSIONISSSTE"
+    },
+    {
+      "titulo": "ISSSTE Gobierno de México",
+      "categoria": "Portal Oficial",
+      "texto": "Sitio institucional del Instituto de Seguridad y Servicios Sociales de los Trabajadores del Estado.",
+      "url": "https://www.gob.mx/issste",
+      "boton": "Ir a gob.mx/issste"
+    }
+  ],
+  "preguntas": [
+    {
+      "titulo": "¿Cómo guardo un PDF desde Google Drive?",
+      "texto": "Abre el documento desde la sección de descargas. En Google Drive, selecciona la opción de descargar si está disponible."
+    }
+  ]
+}
